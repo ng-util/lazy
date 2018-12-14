@@ -50,7 +50,7 @@ describe('lazy', () => {
   describe('#IE', () => {
     it('should be load a js resource', () => {
       isIE = true;
-      srv.change.subscribe(res => {
+      srv.events.subscribe(res => {
         expect(res[0].status).toBe('ok');
       });
       srv.load(['/1.js']);
@@ -67,7 +67,7 @@ describe('lazy', () => {
         };
         return mockObj;
       });
-      srv.change.subscribe(res => {
+      srv.events.subscribe(res => {
         expect(res[0].status).toBe('ok');
         done();
       });
@@ -77,7 +77,7 @@ describe('lazy', () => {
 
   describe('Scripts', () => {
     it('should be load a js resource', () => {
-      srv.change.subscribe(res => {
+      srv.events.subscribe(res => {
         expect(res[0].status).toBe('ok');
       });
       srv.load('/1.js');
@@ -93,7 +93,7 @@ describe('lazy', () => {
 
   describe('Styles', () => {
     it('should be load a css resource', () => {
-      srv.change.subscribe(res => {
+      srv.events.subscribe(res => {
         expect(res[0].status).toBe('ok');
       });
       srv.load('/1.css');
@@ -140,7 +140,7 @@ describe('lazy', () => {
 
   it('should be bad resource', () => {
     testStatus = 'bad';
-    srv.change.subscribe(res => {
+    srv.events.subscribe(res => {
       expect(res[0].status).toBe('error');
     });
     srv.load('/3.js');

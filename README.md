@@ -3,9 +3,9 @@
 
 Lazy load resources for Angular
 
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
+[![NPM version](https://img.shields.io/npm/v/nu-lazy.svg?style=flat-square)](https://www.npmjs.com/package/nu-lazy)
+[![Build Status](https://img.shields.io/travis/ng-util/lazy/master.svg?style=flat-square)](https://travis-ci.org/ng-util/lazy)
+[![Codecov](https://img.shields.io/codecov/c/github/ng-util/lazy.svg?style=flat-square)](https://codecov.io/gh/ng-util/lazy)
 
 ## Demo
 
@@ -41,8 +41,8 @@ export class AppComponent {
 | `events` | `Observable<LazyResult[]>` | Events change callback |
 | `clear()` | `void` | Clean all cached items |
 | `load(paths: string | string[])` | `Promise<LazyResult[]>` | Load the specified resources, includes `.js`, `.css` |
-| `loadScript(path: string, innerContent?: string)` | `Promise<LazyResult>` | Load a script resources |
-| `loadStyle(path: string, rel: string = 'stylesheet', innerContent?: string)` | `Promise<LazyResult>` | Load a style resources |
+| `loadScript(path: string)` | `Promise<LazyResult>` | Load a script resources |
+| `loadStyle(path: string)` | `Promise<LazyResult>` | Load a style resources |
 
 ## License
 
