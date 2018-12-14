@@ -1,0 +1,23 @@
+{
+  "name": "nu-lazy",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Lazy load resources for Angular",
+  "keywords": [
+    "angular",
+    "angular-lazy",
+    "angular-component",
+    "lazy",
+    "ui component",
+    "component"
+  ],
+  "author": "cipchk <cipchk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-util/lazy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ng-util/lazy/issues"
+  },
+  "homepage": "https://github.com/ng-util/lazy#readme"
+}
