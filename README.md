@@ -40,7 +40,7 @@ export class AppComponent {
 | ---- | -- | ----------- |
 | `events` | `Observable<LazyResult[]>` | Events change callback |
 | `clear()` | `void` | Clean all cached items |
-| `load(paths: string | string[])` | `Promise<LazyResult[]>` | Load the specified resources, includes `.js`, `.css` |
+| `load(paths: string ｜ string[])` | `Promise<LazyResult[]>` | Load the specified resources, includes `.js`, `.css` |
 | `loadScript(path: string)` | `Promise<LazyResult>` | Load a script resources |
 | `loadStyle(path: string)` | `Promise<LazyResult>` | Load a style resources |
 
